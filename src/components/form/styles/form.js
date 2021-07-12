@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import {Link as ReachRouterLink} from 'react-router-dom';
+import {Link as ReactRouterLink} from 'react-router-dom';
 
 
 export const Container = styled.div`
@@ -22,14 +22,16 @@ export const Base = styled.form`
   width: 100%;
 `;
 
-export const Error = styled.div`
-//   background: #e87c03;
-//   border-radius: 4px;
-//   font-size: 14px;
-//   margin: 0 0 16px;
-//   color: white;
-//   padding: 15px 20px;
+export const ErrorMessage = styled.div`
+  background: #e87c03;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0 0 16px;
+  color: white;
+  padding: 15px 20px; 
+`;
 
+export const Error = styled.div` //used to print the invalidity message of email and password
   color:#e87c03;
   font-size:10px
   background-color: rgba(0, 0, 0, 0.75);
@@ -61,7 +63,7 @@ export const TextSmall = styled.p`
   color: #8c8c8c;
 `;
 
-export const Link = styled(ReachRouterLink)`
+export const Link = styled(ReactRouterLink)`
   color: #fff;
   text-decoration: none;
   &:hover {

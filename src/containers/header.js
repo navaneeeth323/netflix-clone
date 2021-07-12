@@ -8,7 +8,7 @@ const HeaderContainer = ({children}) => {
       <Header>
           <Header.Frame>
               <Header.Logo to={ROUTES.HOME} alt='Neflix' src={logo}/>
-              <Header.ButtonLink>Sign In</Header.ButtonLink>
+              <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
         </Header.Frame>
         {children}
       </Header>
